@@ -25,8 +25,8 @@ sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.2/contrib/p
 sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.2/contrib/postgis-2.0/legacy.sql
 sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.2/contrib/postgis-2.0/rtpostgis.sql
 sudo -u postgres psql -d template_postgis -f /usr/share/postgresql/9.2/contrib/postgis-2.0/topology.sql
-psql -d template_postgis -c "GRANT ALL ON geometry_columns TO PUBLIC;"
-psql -d template_postgis -c "GRANT ALL ON spatial_ref_sys TO PUBLIC;"
+sudo -u postgres psql -d template_postgis -c "GRANT ALL ON geometry_columns TO PUBLIC;"
+sudo -u postgres psql -d template_postgis -c "GRANT ALL ON spatial_ref_sys TO PUBLIC;"
 EOH
 end
 
