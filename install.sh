@@ -13,7 +13,7 @@ gem install ruby-shadow --no-ri --no-rdoc
 # Clone CartoDB repo
 git clone --recursive https://github.com/CartoDB/cartodb.git /home/ubuntu/cartodb
 # Add necessary Repos
-sudo add-apt-repository -y ppa:ubuntugis-unstable
+sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
 sudo add-apt-repository -y ppa:chris-lea/node.js-legacy
 sudo add-apt-repository -y ppa:cartodb/varnish
 sudo add-apt-repository -y ppa:mapnik/nightly-2.1
