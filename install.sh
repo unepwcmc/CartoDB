@@ -8,12 +8,12 @@ rvm install 1.9.2
 rvm use 1.9.2 --default
 # Install Chef Gems
 gem install bundler  --no-ri --no-rdoc
-gem install chef -v 11.6.0 --no-ri --no-rdoc 
+gem install chef --no-ri --no-rdoc 
 gem install ruby-shadow --no-ri --no-rdoc
 # Clone CartoDB repo
 git clone --recursive https://github.com/CartoDB/cartodb.git /home/ubuntu/cartodb
 # Add necessary Repos
-sudo add-apt-repository -y ubuntugis-unstable
+sudo add-apt-repository -y ppa:ubuntugis-unstable
 sudo add-apt-repository -y ppa:chris-lea/node.js-legacy
 sudo add-apt-repository -y ppa:cartodb/varnish
 sudo add-apt-repository -y ppa:mapnik/nightly-2.1
