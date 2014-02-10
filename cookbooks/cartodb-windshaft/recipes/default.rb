@@ -1,5 +1,6 @@
 bash "Do CartoDBSQL stuff" do
 user "ubuntu"
+group "ubuntu"
 code <<-EOH
 git clone git://github.com/CartoDB/Windshaft-cartodb.git /home/ubuntu/Windshaft-cartodb
 cd /home/ubuntu/Windshaft-cartodb
