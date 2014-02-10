@@ -21,5 +21,5 @@ sudo add-apt-repository -y ppa:mapnik/nightly-2.1
 echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" | sudo tee /etc/apt/sources.list.d/pg.list
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get -y update
-# CLone CartoDB
-git clone --recursive https://github.com/CartoDB/cartodb.git /home/ubuntu
+
+
