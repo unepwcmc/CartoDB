@@ -7,6 +7,7 @@ package "npm"
 
 bash "configure node" do
 user "ubuntu"
+group "ubuntu"
 code <<-EOH
 sudo -u ubuntu curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 sudo -u ubuntu source /home/ubuntu/.bash_profile
