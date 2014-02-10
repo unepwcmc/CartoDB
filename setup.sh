@@ -28,6 +28,7 @@ sed -i "s/yyyy/${input_suffix}/g" /home/ubuntu/Windshaft-cartodb/config/environm
 sed -i "s/zzzz/${input_host}/g" /home/ubuntu/CartoDB-SQL-API/config/environments/production.js
 sed -i "s/xxxx/${input_domain}/g" /home/ubuntu/CartoDB-SQL-API/config/environments/production.js
 sed -i "s/yyyy/${input_suffix}/g" /home/ubuntu/CartoDB-SQL-API/config/environments/production.js
+sed -i "s/8080/8181/g" /usr/local/etc/varnish/default.vcl
 sudo a2ensite cartodb
 sudo service apache2 restart
 cd /home/ubuntu/cartodb
