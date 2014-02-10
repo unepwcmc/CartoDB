@@ -1,0 +1,5 @@
+sql: node /home/ubuntu/CartoDB-SQL-API/app.js production
+tiler: node /home/ubuntu/Windshaft-cartodb/app.js production
+worker: bundle exec rake resque:work QUEUE=* RAILS_ENV=production
+pgbouncer: sudo -u postgres pgbouncer -d /etc/pgbouncer/pgbouncer.ini
+
