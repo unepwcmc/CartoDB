@@ -11,6 +11,11 @@ echo "Please enter your domain (without the suffix): "
 read input_domain
 echo "Please enter your domain suffix: "
 read input_suffix
+sudo wget "https://raw.github.com/unepwcmc/CartoDB/master/templates/cartodb" /etc/apache2/sites-available/cartodb
+wget "https://raw.github.com/unepwcmc/CartoDB/master/templates/cartodb-sql.production.js" /home/ubuntu/CartoDB-SQL-API/config/environments/production.js
+wget "https://raw.github.com/unepwcmc/CartoDB/master/templates/windshaft-production.js" /home/ubuntu/Windshaft-cartodb/config/environments/production.js
+wget "https://raw.github.com/unepwcmc/CartoDB/master/templates/Procfile" /home/ubuntu/cartodb/Procfile
+wget "https://raw.github.com/unepwcmc/CartoDB/master/templates/app_config.yml" /home/ubuntu/cartodb/config/app_config.yml
 sudo sed -i "s/zzzz/${input_host}/g" /etc/apache2/sites-available/cartodb
 sudo sed -i "s/xxxx/${input_domain}/g" /etc/apache2/sites-available/cartodb
 sudo sed -i "s/yyyy/${input_suffix}/g" /etc/apache2/sites-available/cartodb
@@ -39,4 +44,5 @@ RAILS_ENV=production bundle exec rake cartodb:db:set_unlimited_table_quota["${in
 RAILS_ENV=production bundle exec rake cartodb:db:set_user_private_tables_enabled["${input_host}",'true']
 RAILS_ENV=production bundle exec rake cartodb:db:set_user_quota["${input_host}",10240]
 sed -i "s/5432/6432/g" /home/ubuntu/cartodb/config/database.yml
+cd /home/ubuntu/cartodb && rvmsudo foreman export upstart /etc/init -u ubuntu
 
