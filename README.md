@@ -60,7 +60,7 @@ sudo start cartodb-sql
 
 sudo start cartodb-tiler
 
-sudo start cartodb-workers
+sudo start cartodb-worker
 
 
 You should then be able to navigate to your cartodb domain
