@@ -5,6 +5,7 @@ package "libaprutil1-dev"
 
 bash "Install Passenger Gem" do
 user "ubuntu"
+group "ubuntu"
 code <<-EOH
 rvm use 1.9.2@cartodb && gem install passenger
 passenger-install-apache2-module --auto --languages ruby
