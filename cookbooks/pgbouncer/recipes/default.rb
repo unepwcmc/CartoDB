@@ -1,11 +1,15 @@
 package "pgbouncer"
 
 template "/etc/pgbouncer/pgbouncer.ini" do
+owner "postgres"
+group "postgres"
 source "pgbouncer.ini.erb"
 end
 
 template "/etc/pgbouncer/userlist.txt" do
 source "userlist.txt.erb"
+owner "postgres"
+group "postgres"
 end
 
 bash "Setup Folders" do
