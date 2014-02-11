@@ -9,7 +9,6 @@ service "varnish" do
 end
 
 
-
 template "/etc/default/varnish" do
 source "varnish.erb"
 notifies :restart, resources(:service => "postgresql"), :immediately
