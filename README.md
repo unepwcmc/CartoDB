@@ -1,7 +1,17 @@
-This script should download and install CartoDB
+**This script should download and install CartoDB**
+
+**Things installed by this script**
+
+Apache
+GDAL
+GEOS
+Ruby 1.9.2
+Postgresql 9.2
+Postgis
+Redis
 
 
-Instructions:-
+**Instructions:-**
 
 
 This has been tested on an EC2 medium instance running Ubuntu 12.04.
@@ -35,6 +45,19 @@ This will setup your cartodb environment.
 Lastly you will need to add your domain to your DNS.
 
 
-Things still needing to be added to the script:-
+**Things still needing to be added to the script:-**
 
 Remove both -s config options from /etc/default/varnish
+PGBOUNCER STARTUP SCRIPT
+
+
+**After the installation**
+
+Do:-
+
+sudo start cartodb-sql
+sudo start cartodb-tiler
+sudo start cartodb-workers
+
+
+You should then be able to navigate to your cartodb domain
