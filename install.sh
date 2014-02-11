@@ -2,10 +2,7 @@
 sudo apt-get -y update
 sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev git curl
 # Install Ruby using RVM
-\curl -L https://get.rvm.io | bash
-source /home/ubuntu/.rvm/scripts/rvm
-rvm install 1.9.2
-rvm use 1.9.2 --default
+sudo apt-get install ruby1.9.1 rubygems1.9.1 ruby1.9.1-dev
 # Install Chef Gems
 gem install bundler  --no-ri --no-rdoc
 gem install chef --no-ri --no-rdoc 
