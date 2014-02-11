@@ -11,7 +11,7 @@ end
 
 
 
-template "/etc/postgresql/9.1/main/pg_hba.conf" do
+template "/etc/postgresql/9.2/main/pg_hba.conf" do
 source "pg_hba.conf.erb"
 owner "postgres"
 group "postgres"
