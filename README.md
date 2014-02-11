@@ -3,11 +3,17 @@
 **Things installed by this script**
 
 Apache
+
 GDAL
+
 GEOS
+
 Ruby 1.9.2
+
 Postgresql 9.2
+
 Postgis
+
 Redis
 
 
