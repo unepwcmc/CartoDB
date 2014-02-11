@@ -7,8 +7,8 @@ bash "Install Passenger Gem" do
 user "ubuntu"
 group "ubuntu"
 code <<-EOH
-rvm use 1.9.2@cartodb --create && gem install passenger
-rvm use 1.9.2@cartodb && gem install rake
+gem install passenger
+gem install rake
 passenger-install-apache2-module --auto --languages ruby
 sudo a2enmod ssl
 sudo a2enmod rewrite
