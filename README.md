@@ -53,8 +53,6 @@ Lastly you will need to add your domain to your DNS.
 
 **Things still needing to be added to the script:-**
 
-Remove both -s config options from /etc/default/varnish
-
 PGBOUNCER STARTUP SCRIPT
 
 
