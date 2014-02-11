@@ -4,12 +4,12 @@ package "varnish" do
 end
 
 service "varnish" do
-  service_name "postgresql"
+  service_name "varnish"
   supports :restart => true, :status => true, :reload => true
 end
 
 
 template "/etc/default/varnish" do
 source "varnish.erb"
-notifies :restart, resources(:service => "postgresql"), :immediately
+notifies :restart, resources(:service => "varnish"), :immediately
 end
