@@ -56,7 +56,9 @@ PGBOUNCER STARTUP SCRIPT
 Do:-
 
 sudo start cartodb-sql
+
 sudo start cartodb-tiler
+
 sudo start cartodb-workers
 
 
