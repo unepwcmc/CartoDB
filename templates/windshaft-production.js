@@ -4,7 +4,7 @@ var config = {
     ,host: '0.0.0.0'
     // Regular expression pattern to extract username
     // from hostname. Must have a single grabbing block.
-    ,user_from_host: '^(.*)\\.xxxx\\.zzzz';
+    ,user_from_host: '^(.*)\\.xxxx\\.yyyy';
     // Maximum number of connections for one process
     // 128 is a good value with a limit of 1024 open file descriptors
     ,maxConnections:128
@@ -67,7 +67,7 @@ var config = {
         // The "domain" part will be appended to
         // the cartodb username and passed to
         // SQL-API requests in the Host HTTP header
-        domain: 'xxxx.zzzz',
+        domain: 'xxxx.yyyy',
         version: 'v2'
     }
     ,varnish: {
