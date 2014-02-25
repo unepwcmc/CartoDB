@@ -52,3 +52,8 @@ sudo start cartodb-tiler
 sudo start cartodb-worker
 
 You should then be able to navigate to your cartodb domain
+
+
+
+
+You can use the version_check.sh script to alert you to new releases
