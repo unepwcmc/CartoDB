@@ -1,22 +1,31 @@
-**CartoDB Chef Script**
+CartoDB Chef Script
+=======
 
-Things installed by this script
+##Things installed by this script##
 
-Apache
+- Apache
 
-GDAL
+- GDAL
 
-GEOS
+- GEOS
 
-Ruby 1.9.2
+- Ruby 1.9.2
 
-Postgresql 9.2
+- Postgresql 9.2
 
-Postgis
+- Postgis
 
-Redis
+- Redis
 
-**Instructions:-**
+- Mapnik
+
+- Node
+
+- PGBouncer
+
+- Varnish
+
+##Instructions:-##
 
 This has been tested on an EC2 medium instance running Ubuntu 12.04.
 
@@ -28,7 +37,7 @@ Once you have done this do
 
 git clone https://github.com/unepwcmc/CartoDB.git
 
-Then run
+##Then run##
 
 sudo chef-solo -c /home/ubuntu/chef/CartoDB/config/chefsolo.rb -j /home/ubuntu/chef/CartoDB/roles/cartodb.json
 
@@ -40,8 +49,7 @@ This will setup your cartodb environment.
 
 Lastly you will need to add your domain to your DNS.
 
-
-**After the installation**
+##After the installation##
 
 Do:-
 
@@ -52,8 +60,5 @@ sudo start cartodb-tiler
 sudo start cartodb-worker
 
 You should then be able to navigate to your cartodb domain
-
-
-
 
 You can use the version_check.sh script to alert you to new releases
