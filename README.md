@@ -1,6 +1,9 @@
 CartoDB Chef Script
 =======
 
+This script will install and configure Vizzuality's [cartodb](https://github.com/CartoDB/cartodb)
+
+
 ##Things installed by this script##
 
 - Apache
